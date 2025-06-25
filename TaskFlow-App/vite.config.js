@@ -1,9 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
-  base: '/taskflow-app/',
-});
+  plugins: [react()],
+  base: './', // Important for correct asset linking on Vercel
+})
 
 // https://vitejs.dev/config/
 export default defineConfig({
